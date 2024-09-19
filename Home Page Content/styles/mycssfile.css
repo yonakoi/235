@@ -1,0 +1,22 @@
+body { font-family: sans-serif; font-style: Arial; color: #c4bbaf; background-color:#08080c; }
+p { margin-left: 100px; }
+img.side { float:right; margin: 0 12px; }
+footer {background-color: #1b1a25;}
+a { color: #302f4d; }
+
+main, header, footer { margin: 0 auto; border: 1px; border-color: black; width: 80vw; }
+
+h1, h2, h3 { font-family: "Silkscreen"; color: #936463; }
+
+.silkscreen-regular {
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .silkscreen-bold {
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
