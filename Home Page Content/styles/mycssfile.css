@@ -1,4 +1,4 @@
-body { font-family: sans-serif; font-style: Arial; color: #c4bbaf; background-color:#08080c; }
+body { font-family: sans-serif; color: #c4bbaf; background-color:#08080c; }
 p { margin-left: 100px; }
 img.side { float:right; margin: 0 12px; }
 footer {background-color: #1b1a25;}
@@ -19,4 +19,12 @@ h1, h2, h3 { font-family: "Silkscreen"; color: #936463; }
     font-weight: 700;
     font-style: normal;
   }
+
+  .italic { font-style: italic; }
+
+  .bold { font-weight: bold; }
+
+  #paragraphStyle { font-family: 'Courier New', Courier, monospace;}
+
+  #footerStyle { font-weight: 500; font-style: oblique; }
   
