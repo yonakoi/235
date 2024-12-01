@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Pokémon Finder</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js"></script>
+    <link rel="icon" href="images/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <h1 class = "faculty-glyphic-regular">Pokémon Finder!</h1>
+</header>
+
+<div class="widgets">
+    Enter Pokémon Type: 
+    <input id="searchterm" type="text" size="20" maxlength="20" autofocus placeholder="e.g., fire, water">
+</div>
+
+<div class="widgets">
+    " Filter by Region -> "
+    <select id="region">
+        <option value="0">Any</option>
+        <option value="1">Kanto</option>
+        <option value="2">Johto</option>
+        <option value="3">Hoenn</option>
+        <option value="4">Sinnoh</option>
+        <option value="5">Unova</option>
+        <option value="6">Kalos</option>
+        <option value="7">Alola</option>
+        <option value="8">Galar</option>
+    </select>
+</div>
+
+<div class="widgets">
+	" Max # Results -> "
+	<select id="limit">
+		<option value = "5">5</option>
+		<option value = "10">10</option>
+		<option value = "25">25</option>
+		<option value = "50">50</option>
+		<option value = "100">100</option>
+        <option value = "500">All</option>
+	</select>
+</div>
+
+<div class="widgets">
+    <button type="button" id="search" class="green">Who's That Pokémon??</button>
+</div>
+
+<div id="status">Ready to Search!</div>
+<hr>
+
+<h2>Results</h2>
+<div id="content">
+    <p>No data yet!</p>
+</div>
+</body>
+</html>

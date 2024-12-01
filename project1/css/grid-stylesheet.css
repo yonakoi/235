@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    /* sets base font size for rem sizing */
+    font-size: 16px;
+    font-family: 'Pixelify Sans', Helvetica, Arial, sans-serif;
+}
+
+html,
+body {
+    margin: 0;
+    background-color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header { 
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+    image-rendering: pixelated;
+    color: white;
+    background-color: black; }
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: black;
+}
+
+nav,
+article {
+    padding: .5rem;
+    color:white;
+    background-color: black;
+    border: 3px dotted red; 
+}
+
+nav
+{
+    justify-content: center;
+}
+
+a{
+    color:gold;
+}
+a:hover {
+    color: purple;
+}
+
+/*****************
+Grid Formatting  
+*****************/
+div#undertale { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: auto 10fr auto; 
+    gap: 10px; 
+    grid-template-areas: 
+        "header header"
+        "navbar content"
+        "footer footer"; 
+}
+
+aside { display: block; }
+
+@media screen and (max-width: 780px) {
+    div#undertale {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas:
+            "header"
+            "content"
+            "navbar"
+            "footer";
+    }
+
+    aside { display: block; }
+}
+
+header { grid-area: header; }
+nav { grid-area: navbar; }
+article { grid-area: content; }
+aside{ grid-area: sidebar; }
+footer{ grid-area: footer; }
+
+.img-alignment{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
