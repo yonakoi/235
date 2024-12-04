@@ -1,0 +1,109 @@
+/* style.css */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4;
+  }
+  
+  header {
+    background-color: darkred;
+    color: #fff;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  #manual, #game-area, #controls {
+    margin: 20px 0;
+  }
+  
+  footer {
+    margin-top: auto;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+  }
+
+  #mixing-area.mixing {
+    animation: shake 0.5s linear;
+  }
+  
+  #button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center buttons horizontally */
+    gap: 5px; /* Add space between buttons */
+  }
+  
+  button {
+    background-size: contain; /* Scales image to fit the button size */
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: transform 0.2s;
+  }
+  
+  button:hover {
+    transform: scale(1.05); /* Optional hover effect */
+  }
+  
+  #mix-button {
+    width: 200px;
+    height: 86px;
+    background-image: url('../images/Button_Mix.png');
+  }
+  
+  #reset-button {
+    width: 200px;
+    height: 50px;
+    background-image: url('../images/Button_Reset.png');
+  }
+  
+  #serve-button {
+    width: 200px;
+    height: 99px;
+    background-image: url('../images/Button_Serve.png');
+  }
+  
+  
+  @keyframes shake {
+    0% { transform: rotate(0); }
+    25% { transform: rotate(-5deg); }
+    50% { transform: rotate(5deg); }
+    75% { transform: rotate(-5deg); }
+    100% { transform: rotate(0); }
+  }
+
+/* Style the manual section */
+#manual {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center; 
+  gap: 20px;
+}
+
+#manual .visual img {
+  max-width: 100%; 
+  height: auto;
+}
+
+#manual .drink-manual {
+  max-width: 400px;
+}
+
+  
+  

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Azuki Bar - Projet 3</title>
+  <link rel="stylesheet" href="css/mainstyle.css">
+</head>
+<body>
+  <header>
+    <h1>Azuki Bar</h1>
+    <p id="instructions">Follow the manual to craft the drink. Click ingredients, then MIX, RESET, or SERVE!</p>
+  </header>
+
+  <main>
+    <section id="manual">
+      <div class="visual">
+        <img src="images/Graphics_Background.png" alt="Bartender Kun is in Trouble!" width="500px" height="500px">
+      </div>
+      <div class="drink-manual">
+        <img src="images/Graphics_DrinkManual.png" alt="Recipes for the Drinks" width="500px" height="277px">
+      </div>
+    </section>
+    
+    <section id="game-area">
+      <div id="ingredients">
+        <h3>Ingredients</h3>
+        <button data-ingredient="vodka">Vodka</button>
+        <button data-ingredient="whiskey">Whiskey</button>
+        <button data-ingredient="gin">Gin</button>
+        <button data-ingredient="simple-syrup">Simple Syrup</button>
+        <button data-ingredient="maple-syrup">Maple Syrup</button>
+        <button data-ingredient="strawberry-syrup">Strawberry Syrup</button>
+        <button data-ingredient="water">Water</button>
+        <button data-ingredient="tonic-water">Tonic Water</button>
+        <button data-ingredient="cranberry-juice">Cranberry Juice</button>
+        <button data-ingredient="orange">Orange</button>
+        <button data-ingredient="cherry">Cherry</button>
+        <button data-ingredient="lime">Lime</button>
+        <button data-ingredient="strawberry">Strawberry</button>
+      </div>
+      <div id="mixing-area">
+        <h3>Mixing Area</h3>
+        <div id="selected-ingredients"></div>
+      </div>
+    </section>
+
+    <div id="button-container">
+      <button id="mix-button"></button>
+      <button id="reset-button"></button>
+      <button id="serve-button"></button>
+    </div>
+    
+  </main>
+
+  <footer>
+    <p>[footer]</p>
+  </footer>
+
+  <script src="js/main.js" type="module"></script>
+</body>
+</html>
